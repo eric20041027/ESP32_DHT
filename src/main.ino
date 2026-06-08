@@ -9,12 +9,13 @@
  *   - Blynk                   (Blynk)
  */
 
+#include "secrets.h"   // 必須最先 include，Blynk 需要 TEMPLATE_ID 在最頂端
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
 #include <DHT.h>
 #include <ThingSpeak.h>
 #include <BlynkSimpleEsp32.h>
-#include "config.h"
+#include "config.h"    // 硬體設定（config.h 內的 #include "secrets.h" 可移除）
 
 // ─── 全域物件 ────────────────────────────────────────────
 DHT        dht(DHT_PIN, DHT_TYPE);

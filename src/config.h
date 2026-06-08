@@ -2,8 +2,7 @@
 
 // ─── Wi-Fi / Blynk / ThingSpeak ──────────────────────────
 // 敏感資訊統一放在 secrets.h（已加入 .gitignore，不會上傳 GitHub）
-// 複製 src/secrets.example.h 為 src/secrets.h 並填入真實值
-#include "secrets.h"
+// secrets.h 由 main.ino 最頂端優先 include，此處不重複引用
 
 // ─── 硬體腳位 ────────────────────────────────────────────
 #define DHT_PIN  4
