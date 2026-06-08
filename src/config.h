@@ -1,17 +1,9 @@
 #pragma once
 
-// ─── Wi-Fi ───────────────────────────────────────────────
-#define WIFI_SSID     "YOUR_WIFI_SSID"
-#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
-
-// ─── Blynk ───────────────────────────────────────────────
-#define BLYNK_TEMPLATE_ID   "YOUR_TEMPLATE_ID"
-#define BLYNK_TEMPLATE_NAME "ESP32_DHT_Monitor"
-#define BLYNK_AUTH_TOKEN    "YOUR_BLYNK_AUTH_TOKEN"
-
-// ─── ThingSpeak ──────────────────────────────────────────
-#define THINGSPEAK_CHANNEL_ID  0UL
-#define THINGSPEAK_WRITE_KEY   "YOUR_THINGSPEAK_WRITE_API_KEY"
+// ─── Wi-Fi / Blynk / ThingSpeak ──────────────────────────
+// 敏感資訊統一放在 secrets.h（已加入 .gitignore，不會上傳 GitHub）
+// 複製 src/secrets.example.h 為 src/secrets.h 並填入真實值
+#include "secrets.h"
 
 // ─── 硬體腳位 ────────────────────────────────────────────
 #define DHT_PIN  4
